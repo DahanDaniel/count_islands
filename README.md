@@ -16,17 +16,30 @@ matplotlib==3.5.1
 ```
 (this information is also contained in the requirements.txt file)
 
-## Example invocation (and output):
+## Example invocation (and output)
 ```
 $ sh count_islands.sh test_arrays/proper_islands.txt
 5
 ```
 
 ## Possible error messages
-[input array has wrong shape]
-[input array has invalid character]
-When the file FileNotFoundError("Error: Invalid file path.")
-[invalid file format]
+When the file path is not correct:
+```
+FileNotFoundError("Error: Invalid file path.")
+```
+When the file has invalid extention:
+```
+IOError("Error: Invalid file extention.")
+```
+When the input array has wrong shape:
+```
+ValueError
+```
+When the input array has invalid characters:
+```
+ValueError
+```
+
 
 # The method chosen to count the islands
 The first idea on how to count the number of islands in a inputed 2d 
