@@ -4,6 +4,7 @@ import sys
 import numpy as np
 from scipy import ndimage
 
+sys.path.insert(1, os.path.join(os.path.dirname(sys.path[0]), "scripts"))
 import methods
 
 

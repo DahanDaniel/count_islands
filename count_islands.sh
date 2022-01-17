@@ -1,2 +1,2 @@
-python3 test.py;
-python3 main.py $1;
+python3 tests/test.py;
+python3 scripts/main.py $1;

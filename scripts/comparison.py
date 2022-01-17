@@ -1,10 +1,13 @@
 import time
 from typing import List
+import os
+import sys
 
 import numpy as np
 from scipy import ndimage
 import matplotlib.pyplot as plt
 
+sys.path.insert(1, os.path.join(os.path.dirname(sys.path[0]), "scripts"))
 import methods
 
 
