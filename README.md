@@ -18,7 +18,7 @@ matplotlib==3.5.1
 
 ## Example invocation (and output)
 ```
-$ sh count_islands.sh test_arrays/proper_islands.txt
+$ sh count_islands.sh tests/test_arrays/proper_islands.txt
 5
 ```
 
