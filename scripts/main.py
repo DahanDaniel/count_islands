@@ -33,7 +33,8 @@ def main(file_path):
 
 
 if __name__ == "__main__":
-    file_path = sys.argv[1]
-    if not os.path.exists(file_path):
-        raise FileNotFoundError("Error message")
-    main(file_path)
+    if len(sys.argv) < 2:
+        print("To run the script you have to provide a file path parameter.")
+    else:
+        file_path = sys.argv[1]
+        main(file_path)
