@@ -1,6 +1,7 @@
 import unittest
 import sys
 import os
+import io
 
 import numpy as np
 
@@ -11,7 +12,7 @@ import main
 PATH_PREFIX = os.path.dirname(sys.path[0])
 
 
-class TestEditChecks(unittest.TestCase):
+class TestIslands(unittest.TestCase):
     def test_results(self):
         # Test correctness of returned values for example input.
         arrays_and_result_dict = {
@@ -58,4 +59,4 @@ class TestEditChecks(unittest.TestCase):
 
 
 if __name__ == "__main__":
-    unittest.main(exit=False)
+    unittest.main()
