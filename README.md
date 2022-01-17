@@ -21,6 +21,7 @@ matplotlib==3.5.1
 $ sh count_islands.sh tests/test_arrays/proper_islands.txt
 5
 ```
+In such case unit tests results are also outputed to `STDERR`.
 
 ## Possible error messages
 When the file path is not correct:
