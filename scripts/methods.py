@@ -3,9 +3,7 @@ from typing import List
 import numpy as np
 from scipy import ndimage
 
-
-def dfs(islands_arr):
-    class Solution:
+class Solution:
         def is_safe(
             self, grid: List[List[int]], row: int, col: int, visited
         ) -> bool:
@@ -45,6 +43,7 @@ def dfs(islands_arr):
                         count += 1
             return count
 
+def dfs(islands_arr):
     return Solution().count_islands(islands_arr)
 
 
